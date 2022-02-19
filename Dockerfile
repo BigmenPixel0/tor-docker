@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk add tor=0.4.6.9-r0
+RUN apk add tor=0.4.6.9-r0 --force-broken-world
 
 COPY torrc /etc/tor/torrc
 RUN chown -R tor /etc/tor
