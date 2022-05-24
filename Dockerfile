@@ -1,4 +1,4 @@
-FROM alpine:3.15
+FROM alpine:3.16.0
 
 RUN apk add tor=0.4.6.9-r0 --force-broken-world
 
